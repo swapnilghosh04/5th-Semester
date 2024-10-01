@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Checking for Leap Year
+        </title>
+    </head>
+
+    <body bgcolor = "lightsalmon">
+        <script>
+            var a = parseInt (prompt ("Enter an year below"));
+
+            if (a % 4 == 0) {
+                if (a % 100 == 0) {
+                    if (a % 400 == 0) {
+                        document.write (a + " is a Leap Year.");
+                    } else {
+                        document.write (a + " is not a Leap Year.");
+                    }
+                } else {
+                    document.write (a + " is a Leap Year.");
+                }
+            } else {
+                document.write (a + " is not a Leap Year.");
+            }
+        </script>
+    </body>
+</html>

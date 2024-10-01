@@ -1,0 +1,36 @@
+<html></html>
+    <head>
+        <title>
+            Login Page and Reset Page
+        </title>
+        <script>
+            function f () {
+                var a = document.getElementById("t1");
+                var b = document.getElementById("t2");
+
+                if (a.value == "swapnilghosh04" && b.value == "linpawsghosh")
+                    alert ("Congratulations! Your Login was successful.");
+                else 
+                    alert ("Your Login was unsuccessful, check again!");
+            }
+            
+            function f1 () {
+                var a = document.getElementById("t1");
+                var b = document.getElementById("t2");
+
+                a.value = b.value = "";
+            }
+        </script>
+    </head>
+
+    <body>
+        Username
+        <input type = "text" id = "t1">
+        <br>
+        Password
+        <input type = "password" id = "t2">
+        <br>
+        <input type = "button" value = "APPLY" onClick = "f ()">
+        <input type = "button" value = "RESET" onClick = "f1 ()">
+    </body>
+</html>

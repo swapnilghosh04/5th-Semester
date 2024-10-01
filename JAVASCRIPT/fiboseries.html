@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Printing the Fibonacci Series
+        </title>
+    </head>
+
+    <body>
+        <script>
+            var n = parseInt (prompt ("Enter a number below"));
+            var a = 0, b = 1;
+
+            document.write ("The Fibonacci Series is: "); 
+            for (i = 1; i <= n; i++) {
+                document.write (a + " ");
+                temp = a + b;
+                a = b;
+                b = temp;
+            }
+        </script>
+    </body>
+</html>

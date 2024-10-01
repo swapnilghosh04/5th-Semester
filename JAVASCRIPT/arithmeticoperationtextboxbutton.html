@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>
+            Arithmetic operations using textbox and button
+        </title>
+        <script>
+            function f () {
+                var a = document.getElementById("t1");
+                var b = document.getElementById("t2");
+                var c = document.getElementById("t3");
+                c.value = parseInt (a.value) + parseInt (b.value);
+            }
+
+            function f1 () {
+                var a = document.getElementById("t1");
+                var b = document.getElementById("t2");
+                var c = document.getElementById("t4");
+                c.value = parseInt (a.value) - parseInt (b.value);
+            }
+
+            function f2 () {
+                var a = document.getElementById("t1");
+                var b = document.getElementById("t2");
+                var c = document.getElementById("t5");
+                c.value = parseInt (a.value) * parseInt (b.value);
+            }
+
+            function f3 () {
+                var a = document.getElementById("t1");
+                var b = document.getElementById("t2");
+                var c = document.getElementById("t6");
+                c.value = parseInt (a.value) / parseInt (b.value);
+            }
+
+            function f4 () {
+                var a = document.getElementById("t1");
+                var b = document.getElementById("t2");
+                var c = document.getElementById("t7");
+                c.value = parseInt (a.value) % parseInt (b.value);
+            }
+        </script>
+    </head>
+
+    <body>
+        Enter a value
+        <input type = "text" id = "t1">
+        <br>
+        Enter another value
+        <input type = "text" id = "t2">
+        <br>
+        <input type = "button" value = "+" onClick = "f ()">
+        <input type = "text" id = "t3">
+
+        <input type = "button" value = "-" onClick = "f1 ()">
+        <input type = "text" id = "t4">
+
+        <input type = "button" value = "*" onClick = "f2 ()">
+        <input type = "text" id = "t5">
+
+        <input type = "button" value = "/" onClick = "f3 ()">
+        <input type = "text" id = "t6">
+
+        <input type = "button" value = "%" onClick = "f4 ()">
+        <input type = "text" id = "t7">
+    </body>
+</html>

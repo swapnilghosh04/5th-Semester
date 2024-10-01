@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Finding the factorial of a number
+        </title>
+    </head>
+
+    <body bgcolor = "thistle">
+        <script>
+            var a = parseInt (prompt ("Enter a number below"));
+            var f = 1;
+
+            if (a == 0)
+                document.write ("Factorial of " + a + " is : " + f);
+            else {
+                for (i = 1; i <= a; i++) {
+                    f = f * i;
+                }
+                document.write ("Factorial of " + a + " is : " + f);
+            }
+        </script>
+    </body>
+</html>

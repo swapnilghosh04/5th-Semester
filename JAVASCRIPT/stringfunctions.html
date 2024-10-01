@@ -1,0 +1,81 @@
+<html></html>
+	<head>
+		<title>
+			Signup or Login page with String Functions
+		</title>
+		<script>
+			function f() {
+				var a = document.getElementById("t1");
+				var b = document.getElementById("t2");
+				var c = document.getElementById("t3");
+				if (a.value == "swapnilkoyel" && b.value == "krishnapal")	
+					alert("Congratulations! Your Sign In/Sign Up is successful!");
+				else
+					alert("Your Sign In/Sign Up is unsuccessful, check again!");
+			}
+			function f1() {
+				var a = document.getElementById("t1");
+				var b = document.getElementById("t2");
+				var c = document.getElementById("t4");
+				a.value = "";
+				b.value = "";
+			}
+			function f2() {
+				var a = document.getElementById("t1");
+				var b = document.getElementById("t2");
+				var c = document.getElementById("t5");
+				var str1 = a.value;
+				var str2 = b.value;
+				c.value = str1.concat(str2);
+			}
+			function f3() {
+				var a = document.getElementById("t1");
+				var b = document.getElementById("t2");
+				var c = document.getElementById("t6");
+				var str1 = a.value;
+				var str2 = b.value;
+				c.value = str1.charAt(1);
+			}
+			function f4() {
+				var a = document.getElementById("t1");
+				var b = document.getElementById("t2");
+				var c = document.getElementById("t7");
+				var str1 = a.value;
+				var str2 = b.value;
+				c.value = str1.indexOf("s");
+			}
+			function f5() {
+				var a = document.getElementById("t1");
+				var b = document.getElementById("t2");
+				var c = document.getElementById("t8");
+				var str1 = a.value;
+				var str2 = b.value;
+				var str3 = str1.concat(str2);
+				c.value = str3.lastIndexOf("l");
+			}	
+				
+		</script>
+	</head>
+
+	<body>
+
+			<label>Username : </label>
+			<input type = "text" id = "t1">
+			<br>
+			<label>Password : </label>
+			<input type = "password" id = "t2">
+			<br>
+			
+			<input type = "button" value = "APPLY" onClick = "f()" id="t3">
+			<input type = "button" value = "RESET" onClick = "f1()" id="t4">
+			<input type = "button" value = "CONCAT" onClick = "f2()">
+			<input type = "text" id="t5">
+			<input type = "button" value = "CHARAT" onClick = "f3()">
+			<input type = "text" id="t6">
+			<input type = "button" value = "INDEXOF" onClick = "f4()">
+			<input type = "text" id="t7">
+			<input type = "button" value = "LASTINDEXOF" onClick = "f5()">
+			<input type = "text" id="t8">
+			
+	</body>
+</html>

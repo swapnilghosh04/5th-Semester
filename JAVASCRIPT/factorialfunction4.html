@@ -1,0 +1,26 @@
+<html></html>
+    <head>
+        <title>
+            Input inside and display outside the function
+        </title>
+    </head>
+
+    <body>
+        <script>
+            function fact () {
+                var a = parseInt (prompt ("Enter a number below"));
+                var f = 1;
+                if (a == 0)
+                    return f;
+                else {
+                    for ( i = 1; i <= a; i++) {
+                        f = f * i;
+                    }
+                    return f;
+                }
+            }
+
+            document.write ("Factorial is : " + fact ());
+        </script>
+    </body>
+</html>
