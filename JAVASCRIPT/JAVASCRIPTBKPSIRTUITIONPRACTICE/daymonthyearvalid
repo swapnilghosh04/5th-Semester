@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  
+  <body>
+    Enter date <input type = "text" id = "t1"><br>
+    Enter month <input type = "text" id = "t2"><br>
+    Enter year <input type = "text" id = "t3"><br><br>
+    <input type = "button"

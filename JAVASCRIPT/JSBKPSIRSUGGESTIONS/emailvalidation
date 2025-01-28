@@ -1,0 +1,25 @@
+<html>
+  <head><title></title>
+    <script>
+      function f () {
+        var a = document.getElementById ("t1").value;
+        const re = /^[a-z][a-zA-Z0-9.-_]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
+        
+        if (a == "") {
+          alert ("Enter a valid email");
+        } else if (!re.test(a)) {
+          alert ("Enter a valid email");
+        } else {
+          document.write ("The email is correct");
+        }
+      }
+    </script>
+  </head>
+  
+  <body>
+    Enter email <input type = "text" id = "t1"> <br>
+    <input type = "button" value = "click" onClick = "f ()">
+  </body>
+</html>
+
+<!--/^[a-z]([a-z]|[0-9]|[_.-])*@[a-z]+\.([a-z])+$/;-->

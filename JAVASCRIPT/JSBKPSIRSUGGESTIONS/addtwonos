@@ -1,0 +1,22 @@
+<html>
+  <head><title></title>
+  <script>
+    function f () {
+      var a = parseInt(document.getElementById ("t1").value);
+      var b = parseInt(document.getElementById ("t2").value);
+      var c = document.getElementById ("t3");
+      if (isNaN (a) || isNaN (b))
+        alert ("Enter a valid value");
+      else
+        c.value = a + b;
+    }
+  </script>
+  </head>
+  
+  <body>
+    Enter first value <input type = "text" id = "t1"> <br>
+    Enter second value <input type = "text" id = "t2"> <br>
+    <input type = "button" value = "click" onClick = " f ()"> <br>
+    Addition <input type = "text" id = "t3" readonly>
+  </body>
+</html>

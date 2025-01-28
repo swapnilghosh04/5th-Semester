@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      function f() {
+        var str1 = document.getElementById("t1").value;
+        var str2 = document.getElementById("t2").value;
+        const re = /^[ ]+$/;
+        
+        if ((str1 == "") || (str2 == "") || re.test(str1) || re.test(str2))
+          alert("Textbox(es) can not be blank");
+        else {
+          var str = str1.concat(str2);
+        }
+        for (i = 0; i < str.length; i++) {
+          if (str.charAt(i) == " ")
+            document.write("The concatenated string is : " + str.replace(" ", ""));
+        }
+      }
+    </script>
+    
+    <body>
+      Enter first string <input type = "text" id = "t1">
+      <br>
+      Enter second string <input type = "text" id = "t2">
+      <br><br>
+      <input type = "button" value = "click" onClick = "f()">
+    </body>
+</html>

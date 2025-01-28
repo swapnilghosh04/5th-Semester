@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>
+            getElementByName.exampletwo
+        </title>
+
+        <script>
+            function f () {
+                var c = document.getElementById ("t1").value;
+                var k = document.getElementsByName ("Gender");
+                var n = document.getElementsByName ("Sub");
+
+                if (k [0].checked == true) {
+                    if (n [0].checked == true)
+                        document.write (c + " is " + k [0].value + '<br>' + "His subject is " + n [0].value);
+                    else if (n [1].checked == true)
+                        document.write (c + " is " + k [0].value + '<br>' + "His subject is " + n [1].value);
+                    else
+                        document.write (c + " is " + k [0].value + '<br>' + "His subject is " + n [2].value);
+                }
+
+                if (k [1].checked == true) {
+                    if (n [0].checked == true)
+                        document.write (c + " is " + k [1].value + '<br>' + "Her subject is " + n [0].value);
+                    else if (n [1].checked == true)
+                        document.write (c + " is " + k [1].value + '<br>' + "Her subject is " + n [1].value);
+                    else
+                        document.write (c + " is " + k [1].value + '<br>' + "Her subject is " + n [2].value);
+                }
+            }
+        </script>
+    </head>
+
+    <body bgcolor = "pink">
+        Name
+        <input type = "text" id = "t1">
+        <br>
+        <br>
+
+        Gender
+        <br>
+        <input type = "radio" name = "Gender" value = "Male
+        "> Male
+        <br>
+        <input type = "radio" name = "Gender" value = "Female
+        "> Female
+        <br>
+        <br>
+
+        Sub
+        <br>
+        <input type = "radio" name = "Sub" value = "Computer
+        "> COMPUTER
+        <br>
+        <input type = "radio" name = "Sub" value = "Math
+        "> MATH
+        <br>
+        <input type = "radio" name = "Sub" value = "Electronics
+        "> ELECTRONICS
+        <br>
+
+        <input type = "button" value = "click" onClick = "f ()">
+
+    </body>
+</html>

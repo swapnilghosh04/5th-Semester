@@ -1,0 +1,21 @@
+<html>
+  <head><title></title>
+    <script>
+      function f () {
+        var a = document.getElementById ("t1").value;
+        var b = document.getElementById ("t2").value;
+        
+        for (i = 0; i <= b; i++) {
+          document.write (a + " * " + i + " = " + a * i + "<br>");
+        }
+      }
+    </script>
+  </head>
+  
+  <body>
+    Enter a number n <input type = "text" id = "t1"> <br>
+    Enter range <input type = "text" id = "t2">
+    <br>
+    <input type = "button" value = "click" onClick = "f ()">
+  </body>
+</html>

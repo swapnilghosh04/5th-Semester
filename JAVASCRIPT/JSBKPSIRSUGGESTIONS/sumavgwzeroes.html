@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+			let numbers = [];
+			while(true) {
+				var input = parseInt(prompt("Enter positive numbers (Try to end the sequence with 0)"));
+				var count = 0, sum = 0;
+				
+				if(input == 0) {
+					numbers.push(input);
+					break;
+				}
+				
+				if(input > 0)
+					numbers.push(input);
+				else
+					alert("Please enter a positive number or 0 to stop");
+			}
+			
+			for(i = 0; i < numbers.length; i++) {
+				if(numbers[i] >= 0 && numbers[i] % 10 == 0) {
+					sum += numbers[i];
+					count++;
+				}
+			}
+			
+			var avg = sum / count;
+			
+			document.write("The sum : " + sum + " and average : " + avg);
+		</script>
+	</head>
+</html>
+				

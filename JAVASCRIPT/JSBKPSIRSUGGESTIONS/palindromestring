@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      function f() {
+        var str = document.getElementById("t1").value;
+        var revstr = "";
+        
+        for(i = str.length - 1; i >= 0; i--) {
+          revstr = revstr + str.charAt(i);
+        }
+        
+        if (str == revstr)
+          document.write ("The string " + str + " is palindrome.");
+        else
+          document.write ("The string " + str + " is not palindrome.");
+      }
+    </script>
+  </head>
+  
+  <body>
+    Enter a string <input type = "text" id = "t1">
+    <br><br>
+    <input type = "button" value = "click" onClick = "f()"> 
+  </body>
+</html>
+  

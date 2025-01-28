@@ -1,0 +1,21 @@
+<html>
+  <head><title></title>
+    <script>
+      function f () {
+        var r = document.getElementById ("t1").value;
+        if (isNaN (r))
+          alert ("Enter a valid number");
+        else {
+          var v = (4/3) * 3.45 * Math.pow(r, 3);
+          document.write ("The volume of the sphere : " + v);
+        }
+      }
+    </script>
+  </head>
+  
+  <body>
+    Enter radius <input type = "text" id = "t1">
+    <br>
+    <input type = "button" value = "click" onClick = "f ()">
+  </body>
+</html>

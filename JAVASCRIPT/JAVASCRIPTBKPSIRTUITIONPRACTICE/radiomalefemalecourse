@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>
+      p2
+    </title>
+    <script>
+      function f () {
+        var a=document.getElementById("t1").value;
+        var k=document.getElementsByName("Gender");
+        var n=document.getElementsByName("Subject");
+        
+        if (k [0].checked == true) {
+          if (n [0].checked == true)
+            document.write (a + k [0].value + " His course " + n [0].value);
+          else if (n [1].checked == true)
+            document.write (a + k [0].value + " His course " + n [1].value);
+        }
+        if (k [1].checked == true) {
+          if (n [0].checked == true)
+            document.write (a + k [1].value + " Her course " + n [0].value);
+          else if (n [1].checked == true)
+            document.write (a + k [1].value + " Her course " + n [1].value);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    Name <input type="text" id="t1"> <br>
+    <input type="radio" name="Gender" value=" is male.">Male <br>
+    <input type="radio" name="Gender" value=" is female.">Female <br>
+    Course <br>
+    <input type="radio" name="Subject" value="is BCA.">BCA <br>
+    <input type="radio" name="Subject" value="is BSc.">BSc <br>
+    &nbsp&nbsp&nbsp
+    <input type="button" value="click" onClick="f()">
+  </body>
+</html>
+

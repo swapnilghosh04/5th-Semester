@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      function f() {
+        var d1 = new Date(document.getElementById("t1").value);
+        var d2 = new Date(document.getElementById("t2").value);
+      
+        var d = Math.abs((d1 - d2) / (1000 * 3600 * 24));
+        var dt = Math.round(d);
+        document.write("The difference between the two dates is " + dt + " days.");
+      }
+    </script>
+  </head>
+  
+  <body>
+    Enter first date <input type = "date" id = "t1">
+    <br>
+    Enter second date <input type = "date" id = "t2">
+    <br><br>
+    <input type = "button" value = "click" onClick = "f()">
+  </body>
+</html>

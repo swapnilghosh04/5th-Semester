@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      function f() {
+        var d1 = document.getElementById("t1").value;
+        var dd = d1.charAt(0)+d1.charAt(1);
+        document.write("day : " + dd + "<br>");
+        var mm = d1.charAt(3)+d1.charAt(4);
+        document.write("month : " + mm + "<br>");
+        var yy = d1.charAt(6)+d1.charAt(7)+d1.charAt(8)+d1.charAt(9);
+        document.write("year : " + yy + "<br>");
+        var d = new Date();
+        d.setFullYear(yy, mm , dd);
+        
+        var d1 = new Date();
+        
+        var t = (d1 - d) / (1000 * 3600 * 24 * 30 * 12);
+        document.write("The difference between the two dates is " + t + " days.");
+      }
+    </script>
+  </head>
+  
+  <body>
+    DOB <input type = "text" id = "t1" placeholder = "dd/mm/yyyy">
+    <br><br>
+    <input type = "button" value = "click" onClick = "f()">
+  </body>
+</html>

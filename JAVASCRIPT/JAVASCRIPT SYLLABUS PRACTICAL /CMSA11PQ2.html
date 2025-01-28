@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            getElementById.example2
+        </title>
+
+        <script>
+            function f () {
+                var a = document.getElementById ("t1");
+                var b = document.getElementById ("t2");
+                var c = document.getElementById ("t3");
+
+                if (a.value >= b.value) {
+                    if (a.value >= c.value) {
+                        document.write ("Largest Number is: " + a.value);
+                    } else {
+                        document.write ("Largest Number is: " + c.value);
+                    }
+                } else {
+                    if (b.value >= c.value) {
+                        document.write ("Largest Number is: " + b.value);
+                    } else {
+                        document.write ("Largest Number is: " + c.value);
+                    }
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+            First Number
+            <input type = "text" id = "t1">
+            <br>
+
+            Second Number
+            <input type = "text" id = "t2">
+            <br>
+
+            Third Number
+            <input type = "text" id = "t3">
+            <br>
+
+            <input type = "button" value = "CLICK" onClick = "f ()">
+
+    </body>
+</html>

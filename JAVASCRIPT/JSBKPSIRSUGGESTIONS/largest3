@@ -1,0 +1,30 @@
+<html>
+  <head><title></title>
+    <script>
+      function f () {
+        var a = parseInt(document.getElementById ("t1").value);
+        var b = parseInt(document.getElementById ("t2").value);
+        var c = parseInt(document.getElementById ("t3").value);
+      
+        if (a >= b) {
+          if (a >= c)
+            document.write ("The largest number : " + a);
+          else
+            document.write ("The largest number : " + c);
+        } else {
+          if (b >= c)
+              document.write ("The largest number : " + b);
+          else
+              document.write ("The largest number : " + c);
+          }
+      }
+    </script>
+  </head>
+  
+  <body>
+    Enter first value <input type = "text" id = "t1"> <br>
+    Enter second value <input type = "text" id = "t2"> <br>
+    Enter third value <input type = "text" id = "t3"> <br>
+    <input type = "button" value = "click" onClick = "f ()">
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+			function f() {
+				var k = document.getElementsByName("Color");
+				
+				if(k[0].checked == true)
+					document.body.style.backgroundColor = "red";
+				if(k[1].checked == true)
+					document.body.style.backgroundColor = "blue";
+				if(k[2].checked == true)
+					document.body.style.backgroundColor = "green";
+			}
+		</script>
+	</head>
+	
+	<body>
+		Choose one of the options below to change the color of the background<br>
+		<input type = "radio" name = "Color" value = "red"> Red <br>
+		<input type = "radio" name = "Color" value = "blue"> Blue <br>
+		<input type = "radio" name = "Color" value = "green"> Green <br>
+		<input type = "button" value = "click" onClick = "f()">
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>
+      p2
+    </title>
+    <script>
+      function f() {
+        var a=document.getElementById("t1").value;
+        var k=document.getElementsByName("Gender");
+        var n=document.getElementsByName("Subject");
+        
+        if (k[0].checked == true) {
+          document.write (a + k[0].value);
+          for (i=0; i<n.length; i++) {
+            if (n[i].checked == true)
+              document.write ("The course(s): " + n[i].value);
+          }
+        }
+        if (k[1].checked == true) {
+          document.write (a + k[1].value);
+          for (i=0; i<n.length; i++) {
+            if (n[i].checked == true)
+              document.write ("The course(s): " + n[i].value);
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    Name <input type="text" id="t1"> <br>
+    <input type="radio" name="Gender" value="is male. ">Male <br>
+    <input type="radio" name="Gender" value="female">Female <br>
+    Course <br>
+    <input type="checkbox" name="Subject" value="BCA ">BCA <br>
+    <input type="checkbox" name="Subject" value="BSc ">BSc <br>
+    &nbsp&nbsp&nbsp
+    <input type="button" value="click" onClick="f()">
+  </body>
+</html>
+

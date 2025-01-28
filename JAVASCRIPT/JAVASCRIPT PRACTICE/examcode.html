@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>
+            Exam code in HTML
+        </title>
+    <script>
+        function f () {
+            var a = document.getElementById ("t1").value;
+            var b = document.getElementsByName ("t2");
+            var c = document.getElementsByName ("t3");
+
+            if (b [0].checked == true) {
+                if (c [0].checked == true) {
+                    document.write (a + " eats " + b [0].value + " on " + c [0].value);
+                } else if (c [1].checked == true) {
+                    document.write (a + " eats " + b [0].value + " on " + c [1].value);
+                } else {
+                    document.write (a + " eats " + b [0].value + " on " + c [2].value);
+                }
+            }
+
+            if (b [1].checked == true) {
+                if (c [0].checked == true) {
+                    document.write (a + " eats " + b [1].value + " on " + c [0].value);
+                } else if (c [1].checked == true) {
+                    document.write (a + " eats " + b [1].value + " on " + c [1].value);
+                } else {
+                    document.write (a + " eats " + b [1].value + " on " + c [2].value);
+                }
+            }
+        }
+
+    </script>
+    </head>
+
+    <center>
+        <body>
+            Name
+            <input type = "text" id = "t1" placeholder = "Enter your full name">
+            <br>
+            <br>
+    
+            <input type = "radio" name = "t2" value = "Veg">Veg
+            &nbsp &nbsp &nbsp &nbsp &nbsp
+            <input type = "radio" name = "t3" value = "SUNDAY">SUNDAY
+            <br>
+
+            <input type = "radio" name = "t2" value = "Nonveg">Nonveg
+            &nbsp &nbsp
+            <input type = "radio" name = "t3" value = "MONDAY">MONDAY
+            <br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+            <input type = "radio" name = "t3" value = "FRIDAY">FRIDAY
+            <br>
+            <br>
+
+            <input type = "button" value = "click" onClick = "f ()">
+        </body>
+    </center>
+</html>

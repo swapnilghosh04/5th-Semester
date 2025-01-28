@@ -1,0 +1,22 @@
+<html>
+  <head><title></title>
+  <script>
+    function f () {
+      var a = document.getElementById ("t1").value;
+      const re1 = /^[A-Za-z]+$/;
+      if (a == "") {
+        alert ("Enter a valid name");
+      } else if (!re1.test(a)) {
+        alert ("Enter a valid name");
+      } else {
+        document.write ("The name is correct");
+      }
+    }
+  </script>
+  </head>
+  
+  <body>
+    Enter name <input type = "text" id = "t1"> <br>
+    <input type = "button" value = "click" onClick = "f ()">
+  </body>
+</html>

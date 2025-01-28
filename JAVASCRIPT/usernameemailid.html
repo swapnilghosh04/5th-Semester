@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>
+            Username and Email ID
+        </title>
+
+        <script>
+            function f () {
+                var a = document.getElementById ("t1").value;
+                var b = document.getElementById ("t2").value;
+                var count = countone = 0;
+                if (a == "swapnilKOYEL" && b == "koyel.pal54@gmail.com") {	
+					alert("Congratulations! Your Sign In/Sign Up is successful!");
+                    for (i = 0; i < a.length; i++) {
+                        if ((a [i] == "a" || a [i] == "e" || a [i] == "i" || a [i] == "o" || a [i] == "u") || (a [i] == "A" || a [i] == "E" || a [i] == "I" || a [i] == "O" || a [i] == "U"))
+                            count ++;
+                    }
+                    document.write ("Number of vowels in username : " + parseInt (count));
+
+                    var str1 = b;
+                    let str2;
+                    str2 = str1.indexOf ("@");
+                    document.write ('<br>' + "The index of @ in the email id is : " + parseInt (str2));
+
+                    for (i = 0; i < b.length; i++) {
+                        if (b [i] == ".") {
+                            countone ++;
+                        }
+                    }
+                    document.write ('<br>' + "Number of dots in email id : " + parseInt (countone));
+                } else {
+                    alert("Your Sign In/Sign Up is unsuccessful!");
+                }
+                    
+            }
+        </script>
+    </head>
+
+    <center>
+        <body>
+            Username
+            <input type = "text" id = "t1" placeholder = "Enter a valid username">
+            <br>
+            <br>
+
+            email id
+            <input type = "email" id = "t2" placeholder = "Enter a valid email id">
+            <br>
+            <br>
+
+            <input type = "button" value = "click" onClick = "f ()">
+        </body>
+    </center>
+</html>

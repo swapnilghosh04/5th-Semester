@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      function f() {
+        var secs = parseInt(document.getElementById("t1").value);
+        var hr = document.getElementById("t2");
+        var min = document.getElementById("t3");
+        var sec = document.getElementById("t4");
+        
+        if(isNaN(secs))
+          alert("Enter a valid value");
+        else {
+          min.value = parseInt(secs / 60);
+          sec.value = parseInt(secs % 60);
+          
+          hr.value = parseInt(min.value / 60);
+          min.value = parseInt(min.value % 60);
+        }
+      }
+    </script>
+  </head>
+  
+  <body>
+    Enter value in seconds <input type = "text" id = "t1">
+    <br><br>
+    <input type = "button" value = "click" onClick = "f()">
+    <br><br>
+    <input type = "text" id = "t2" readonly> hr(s)
+    &nbsp<input type = "text" id = "t3" readonly> min(s)
+    &nbsp<input type = "text" id = "t4" readonly> sec(s)
+  </body>
+</html>

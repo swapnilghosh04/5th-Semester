@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      function f() {
+        var t = parseInt(document.getElementById("t1").value);
+        var p = parseInt(document.getElementById("t2").value);
+        var r = parseInt(document.getElementById("t3").value);
+        var ai = document.getElementById("t4");
+        
+        if (isNaN(t) || isNaN(p) || isNaN(r))
+          alert("Enter valid value(s)");
+        else {
+          var i = (p * r * t) / 100;
+          ai.value = p + i;
+        }
+      }
+    </script>
+  </head>
+  
+  <body>
+    Enter the year <input type = "text" id = "t1"><br>
+    Enter the amount <input type = "text" id = "t2"><br>
+    Enter the interest rate <input type = "text" id = "t3"><br><br>
+    <input type = "button" value = "click" onClick = "f()"><br><br>
+    Amount + Interest <input type = "text" id = "t4" readonly>
+  </body>
+</html>

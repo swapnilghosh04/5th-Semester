@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      function f() {
+        var d = parseInt(document.getElementById("t1").value);
+        var m = parseInt(document.getElementById("t2").value) - 1;
+        var y = parseInt(document.getElementById("t3").value);
+        var lyr = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        var yr = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        var a = [];
+        var mssg = "This date is invalid.";
+        
+        if (y > 0 && m >= 0 && m <= 11 && d >= 1 && d <=31) {
+          if ((y % 100 == 0 && y % 400 == 0) || (y % 100 != 0 && y % 4 == 0))
+            a = lyr;
+          else
+            a = yr;
+          if (d <= a[m])
+            mssg = "This date is valid.";
+        }
+        document.write(mssg);
+      }
+    </script>
+  </head>
+    
+    <body>
+      Enter the day <input type = "text" id = "t1" placeholder = "dd">
+      <br>
+      Enter the month <input type = "text" id = "t2" placeholder = "mm">
+      <br>
+      Enter the year <input type = "text" id = "t3" placeholder = "yyyy">
+      <br><br>
+      <input type = "button" value = "click" onClick = "f()">
+    </body>
+</html>

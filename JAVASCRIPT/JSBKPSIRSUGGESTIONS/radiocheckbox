@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      function f() {
+        var n = document.getElementById("t1").value;
+        var g = document.getElementsByName("Gender");
+        var c = document.getElementsByName("Course");
+        var str = "";
+        
+        str = str + n;
+        if(g[0].checked == true) {
+          str = str + g[0].value + "His course(s) is/are :";
+          for(i = 0; i < c.length; i++) {
+            if(c[i].checked == true)
+              str = str + c[i].value;
+          }
+        }
+        if(g[1].checked == true) {
+          str = str + g[1].value + "Her course(s) is/are :";
+          for(i = 0; i < c.length; i++) {
+            if(c[i].checked == true)
+              str = str + c[i].value;
+          }
+        }
+        document.write(str);
+      }
+    </script>
+  </head>
+    
+    <body>
+      Enter name <input type = "text" id = "t1"><br>
+      Select gender below:<br>
+      <input type = "radio" name = "Gender" value = " is male. "> MALE<br>
+      <input type = "radio" name = "Gender" value = " is female. "> FEMALE<br><br>
+      Select course(s) below:<br>
+      <input type = "checkbox" name = "Course" value = " BCA"> BCA<br>
+      <input type = "checkbox" name = "Course" value = " BSc"> BSc<br><br>
+      <input type = "button" value = "click" onClick = "f()">
+    </body>
+</html>

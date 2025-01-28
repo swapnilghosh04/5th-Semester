@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      function f() {
+         var b = new Date(document.getElementById("t1").value);
+         var d = new Date();
+         
+         var d1 = Math.abs((b - d) / (1000 * 3600 * 24));
+         var dt = Math.round(d1);
+         
+         document.write("The difference between the two dates is " + dt + " days.");
+      }
+    </script>
+  </head>
+  
+  <body>
+    Enter DOB <input type = "date" id = "t1">
+    <br><br>
+    <input type = "button" value = "click" onClick = "f()">
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	
+	<body>
+		<script>
+			var n = parseInt(prompt("Enter the number of numeric inputs"));
+			var Pos_count = 0, Neg_count = 0, Zero_count = 0;
+
+			if(isNaN(n) || n <= 0 )
+				alert("Enter a valid number");
+			else {
+				for(i = 0; i < n; i++) {
+					var n1 = parseInt(prompt(`Enter value ${i + 1}`));
+					
+					if(isNaN(n1)) {
+						alert("Enter a valid value");
+						continue;
+					}
+						
+					if(n1 > 0)
+						Pos_count++;
+					else if(n1 == 0)
+						Zero_count++;
+					else
+						Neg_count++;
+				}
+				document.write("The positive count: " + Pos_count + "<br>" + "The zero count: " + Zero_count + "<br>" + "The negative count: " + Neg_count);
+			}
+		</script>
+	</body>
+<html>
+							

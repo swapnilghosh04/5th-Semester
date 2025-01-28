@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>
+      A program in JavaScript
+    </title>
+    <script>
+    function f () {
+      var a = document.getElementById ("t1").value;
+      var b = document.getElementById ("t2").value;
+      var c = document.getElementById ("t3").value;
+      var d = document.getElementById ("t4");
+      var p = parseInt(b);
+      var r = parseInt(c);
+      var t = parseInt(a);
+      d.value = p + ((p * r * t)/100);
+    }
+    </script>
+  </head>
+  
+  <body>
+    year<input type = "text" id = "t1">
+    <br>
+    amount<input type = "text" id = "t2">
+    <br>
+    interest rate<input type = "text" id = "t3">
+    <br>
+    <input type = "button" value = "click" onClick = "f ()">
+    <br>
+    amount + interest<input type = "text" id = "t4">
+  </body>
+</html>

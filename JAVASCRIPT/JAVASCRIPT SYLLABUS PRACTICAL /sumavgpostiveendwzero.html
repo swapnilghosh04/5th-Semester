@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            getElementById.example3
+        </title>
+    </head>
+
+    <body>
+        <script>
+            let numbers = [];
+            while (true) {
+                var input = prompt("Enter a number below (try to end the sequence with Zero):");
+                var num = parseInt (input);
+
+                if (num == 0) {
+                    numbers.push (num);
+                    break;
+                }
+
+                if (num > 0) {
+                    numbers.push (num);
+                } else {
+                    alert ("Please enter a positive number or 0 to stop.");
+                }
+                
+                var sum = 0;
+                var count = 0;
+
+                for (i = 0; i < numbers.length; i++) {
+                    if (numbers [i] >= 0 && numbers [i] % 10 == 0)
+                    sum += numbers [i];
+                    count ++;
+                }
+            }
+
+            var avg = sum / count;
+
+            document.write ("Sum : " + sum + '<br>' + "Average : " + avg)
+        </script>
+    </body>
+</html>

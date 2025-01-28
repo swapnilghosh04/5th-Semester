@@ -1,0 +1,26 @@
+<html>
+  <head><title></title>
+  <script>
+    function f () {
+      var w = parseInt(document.getElementById("t1").value);
+      var t = document.getElementsByName("Temperature");
+
+      if(t[0].checked == true) {
+        document.write("The value in Fahrenheit is " + ((9 / 5) * w + 32) + t[0].value);
+      }
+      if(t[1].checked == true) {
+        document.write("The value in Celsius is " + ((w - 32) * (5/9)) + t[1].value);
+      }
+    }
+  </script>
+  </head>
+
+  <body>
+    Enter temperature value <input type = "text" id = "t1">
+    <br>
+    Select options below :<br>
+    <input type = "radio" name = "Temperature" value = "F."> Celsius to Fahrenheit<br>
+    <input type = "radio" name = "Temperature" value = " degrees."> Fahrenheit to Celsius<br>
+    &nbsp&nbsp&nbsp&nbsp<input type = "button" value = "click" onClick = "f ()">
+  </body>
+</html>

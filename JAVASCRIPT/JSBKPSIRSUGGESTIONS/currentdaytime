@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  
+  <body>
+    <script>
+      var d = new Date();
+      var n = "";
+      n = n + "Today is : ";
+      k = d.getDay();
+      if (k == 0)
+        n = n + "Sunday";
+      else if (k == 1)
+        n = n + "Monday";
+      else if (k == 2)
+        n = n + "Tuesday";
+      else if (k == 3)
+        n = n + "Wednesday";
+      else if (k == 4)
+        n = n + "Thursday";
+      else if (k == 5)
+        n = n + "Friday";
+      else
+        n = n + "Saturday";
+      
+      var h = d.getHours();
+      var m = d.getMinutes();
+      var s = d.getSeconds();
+      
+      n = n + " Current time is : " + h + ":" + m + ":" + s + " AM";
+      document.write(n);
+    </script>
+  </body>
+</html>

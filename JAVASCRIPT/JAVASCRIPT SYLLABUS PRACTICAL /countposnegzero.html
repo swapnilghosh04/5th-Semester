@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            getElementById.example6
+        </title>
+    </head>
+
+    <body>
+        <script>
+            var posCount = negCount = zeroCount = 0;
+
+            var n = parseInt (prompt ("Enter the number(s) to be read below"));
+
+            if (isNaN (n) || n <= 0) {
+                alert ("Enter a valid positive number.");
+            } else {
+                for (i = 0; i < n; i++) {
+                    var num = parseFloat (prompt (`Enter number ${i + 1}:`));
+
+                    if (isNaN (num)) {
+                        alert ("Skipping the invalid input");
+                        continue;
+                    }
+
+                    if (num > 0) {
+                        posCount ++;
+                    } else if (num < 0) {
+                        negCount ++;
+                    } else {
+                        zeroCount ++;
+                    }
+                }
+
+                document.write ("Number of positive numbers : " + posCount + '<br>' + "Number of negative numbers : " + negCount + '<br>' + "Number of Zeros : " + zeroCount);
+            }
+        </script>
+    </body>
+</html>

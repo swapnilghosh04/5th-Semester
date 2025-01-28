@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      function f() {
+        var d1 = document.getElementById("t1").value;
+        var d2 = document.getElementById("t2").value;
+        var dd = d1.charAt(0)+d1.charAt(1);
+        document.write("day : " + dd + "<br>");
+        var mm = d1.charAt(3)+d1.charAt(4);
+        document.write("month : " + mm + "<br>");
+        var yy = d1.charAt(6)+d1.charAt(7)+d1.charAt(8)+d1.charAt(9);
+        document.write("year : " + yy + "<br>");
+        var d = new Date();
+        d.setFullYear(yy, mm , dd);
+        
+        var dd = d2.charAt(0)+d2.charAt(1);
+        document.write("day : " + dd + "<br>");
+        var mm = d2.charAt(3)+d2.charAt(4);
+        document.write("month : " + mm + "<br>");
+        var yy = d2.charAt(6)+d2.charAt(7)+d2.charAt(8)+d2.charAt(9);
+        document.write("year : " + yy + "<br>");
+        var d1 = new Date();
+        d1.setFullYear(yy, mm , dd);
+        
+        var t = (d1 - d) / (1000 * 3600 * 24);
+        var time = Math.abs(t);
+        document.write("The difference between the two dates is " + time + " days.");
+      }
+    </script>
+  </head>
+  
+  <body>
+    Enter the first date <input type = "text" id = "t1" placeholder = "dd/mm/yyyy"><br>
+    Enter the second date <input type = text" id = "t2" placeholder = "dd/mm/yyyy"><br><br>
+    <input type = "button" value = "click" onClick = "f()"> 
+  </body>
+</html>

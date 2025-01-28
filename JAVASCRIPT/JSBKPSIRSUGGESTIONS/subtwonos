@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      function f() {
+        var a = parseInt(document.getElementById("t1").value);
+        var b = parseInt(document.getElementById("t2").value);
+       
+        if (isNaN(a) || isNaN(b))
+          alert("Enter valid value(s)");
+        else
+          document.write("The difference of the two values is " + (a - b));
+      }
+    </script>
+  </head>
+  
+  <body>
+    Enter first value <input type = "text" id = "t1">
+    <br>
+    Enter second value <input type = "text" id = "t2">
+    <br><br>
+    <input type = "submit" value = "click" onClick = "f()"> 
+  </body>
+</html>

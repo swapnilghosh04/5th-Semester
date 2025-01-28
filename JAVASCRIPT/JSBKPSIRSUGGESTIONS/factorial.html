@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+			function f() {
+				var n = parseInt(document.getElementById("t1").value);
+				var fact = document.getElementById("t2");
+				var f = 1;
+				
+				if(isNaN(n))
+					alert("Enter a valid value");
+				else {
+					if(n == 0)
+						fact.value = f;
+					else {
+						for(i = 1; i <= n; i++) {
+							f = f * i
+						}
+						fact.value = f;
+					}
+				}	
+			}
+		</script>
+	</head>
+	
+	<body>
+		Enter a number <input type = "text" id = "t1"><br><br>
+		<input type = "button" value = "click" onClick = "f()"><br><br>
+		Factorial <input type = "text" id = "t2" readonly>
+	</body>
+</html>

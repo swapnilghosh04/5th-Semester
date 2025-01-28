@@ -1,0 +1,25 @@
+<html>
+  <head><title></title>
+  <script>
+    function f () {
+      var a = document.getElementById ("t1").value;
+      var count = 0;
+      if (a == "")
+        alert("Textbox can not be blank");
+      else {
+        for (i = 0; i < a.length; i++) {
+          if ((a [i] == "a") || (a [i] == "e") || (a [i] == "i") || (a [i] == "o") || (a [i] == "u") || (a [i] == "A") || (a [i] == "E") || (a [i] == "I") || (a [i] == "O") || (a [i] == "U"))
+            count ++;
+        }
+        document.write ("Number of vowel(s) in the string : " + parseInt(count));
+      }
+    }
+  </script>
+  </head>
+  
+  <body>
+   Enter a string <input type = "text" id = "t1">
+   <br>
+   <input type = "button" value = "click" onClick = "f ()">
+  </body>
+</html>

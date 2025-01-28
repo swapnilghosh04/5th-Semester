@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  
+  <body>
+    <script>
+      var a = prompt("Enter a phone number below");
+      const re = /^[+](91)\d{10}$/;
+      if (a == "")
+        console.log("Prompt box can not be blank");
+      else if (!re.test(a))
+        console.log("Enter a valid phone number");
+      else
+        console.log("Your phone number is valid");
+    </script>
+  </body>
+</html>

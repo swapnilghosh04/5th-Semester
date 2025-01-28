@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            Prime Number Checking
+        </title>
+        <script>
+            function f() {
+                count = 0;
+                var a = document.getElementById("t1").innerHTML;
+                // document.write(a);
+                a = a + "<br>";
+
+                var p = parseInt(document.getElementById("t2").value);
+                if (p <= 1)
+                    document.write(a + p + " is NOT prime!");
+                else {
+                    for (i = 1; i <= p; i++) {
+                        if (p % i == 0)
+                            count++;
+                    }
+
+                    if (count > 2) {
+                        document.write(a + p + " is NOT prime.");
+                    } else {
+                        document.write(a + p + " is PRIME.");
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p id="t1"><b>Prime Number Checking</b></p>
+
+        Type the number here
+        <input type="text" id="t2">
+        <br>
+
+        <input type="button" value="Check" onclick="f ()">
+    </body>
+</html>

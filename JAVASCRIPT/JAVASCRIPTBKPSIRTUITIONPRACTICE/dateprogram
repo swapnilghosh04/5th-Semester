@@ -1,0 +1,15 @@
+<html>
+  <head>
+      <title></title>
+  </head>
+  
+  <body>
+    <script>
+      d = new Date();
+      alert(d);
+      var yr = d.getFullYear();
+      alert(yr);
+      alert(d.getMonth());
+    </script>
+  </body>
+</html>

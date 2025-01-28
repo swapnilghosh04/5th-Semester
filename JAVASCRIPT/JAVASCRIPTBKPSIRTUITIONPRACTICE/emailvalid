@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title></title>
+    <script>
+      function f() {
+        var e = document.getElementById("t1").value;
+        const re = /^[a-z][a-zA-Z0-9._-]+@[a-zA-Z]+\.[a-zA-Z]{2,}$/;
+        
+        if(e == "")
+          alert("Textbox can not be blank");
+        else if(!re.test(e))
+          alert("Enter a valid email");
+        else
+          document.write("The email is correct");
+      }
+    </script>
+  </head>
+  
+  <body>
+    Enter email <input type = "text" id = "t1"><br><br>
+    <input type = "button" value = "click" onClick = "f()">
+  </body>
+</html>

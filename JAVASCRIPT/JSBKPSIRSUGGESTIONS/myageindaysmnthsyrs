@@ -1,0 +1,85 @@
+<!--<html>
+  <head>
+    <title></title>
+    <script>
+      function f() {
+        var b = new Date(document.getElementById("t1").value);
+        var d = new Date();
+        var temp, temp1, temp2;
+        
+        var mm = b.getMonth();
+        var dd = b.getDate();
+        var yyyy = b.getFullYear();
+        
+        var mm1 = d.getMonth();
+        var dd1 = d.getDate();
+        var yyyy1 = d.getFullYear();
+        
+        if (dd1 > dd)
+          temp = dd1 - dd;
+        else {
+          temp = (dd1 + 30) - dd;
+          mm1 = (mm1 - 1);
+        }
+        if (mm1 > mm)
+          temp1 = mm1 - mm;
+        else {
+          temp1 = (mm1 + 12) - mm;
+          yyyy1 = (yyyy1 - 1);
+        } 
+        temp2 = yyyy1 - yyyy;
+          
+        document.write("Your exact age is " + temp2 + " years, " + temp1 + " months and " + temp + " days.");
+      }
+    </script>
+  </head>
+  
+  <body>
+    Enter DOB <input type = "date" id = "t1">
+    <br><br>
+    <input type = "button" value = "click" onClick = "f()">
+  </body>
+</html>-->
+
+<html>
+  <head>
+    <title></title>
+    <script>
+      function f() {
+        var b = new Date(document.getElementById("t1").value);
+        var d = new Date();
+        var temp, temp1, temp2;
+        
+        var mm = b.getMonth();
+        var dd = b.getDate();
+        var yyyy = b.getFullYear();
+        
+        var mm1 = d.getMonth();
+        var dd1 = d.getDate();
+        var yyyy1 = d.getFullYear();
+        
+        if (dd1 > dd)
+          temp = dd1 - dd;
+        else {
+          temp = (dd1 + 30) - dd;
+          mm1 = (mm1 - 1);
+        }
+        if (mm1 > mm)
+          temp1 = mm1 - mm;
+        else {
+          temp1 = (mm1 + 12) - mm;
+          yyyy1 = (yyyy1 - 1);
+        } 
+        temp2 = yyyy1 - yyyy;
+          
+        document.write("Your exact age is " + temp2 + " years, " + temp1 + " months and " + temp + " days.");
+      }
+    </script>
+  </head>
+  
+  <body>
+    Enter DOB <input type = "date" id = "t1">
+    <br><br>
+    <input type = "button" value = "click" onClick = "f()">
+  </body>
+</html>

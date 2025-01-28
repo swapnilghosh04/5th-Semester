@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+			function f() {
+				var a = parseInt(document.getElementById("t1").value);
+				var b = parseInt(document.getElementById("t3").value);
+				var v = document.getElementById("t2");
+				
+				if((isNaN(a)) || (isNaN(a)))
+					alert("Enter valid value(s)");
+				else
+					v.value = parseInt(a + b);
+			}
+			
+			function f1() {
+				var a = parseInt(document.getElementById("t1").value);
+				var b = parseInt(document.getElementById("t3").value);
+				var v = document.getElementById("t2");
+				
+				if((isNaN(a)) || (isNaN(a)))
+					alert("Enter valid value(s)");
+				else
+					v.value = parseInt(a - b);
+			}
+			
+			function f2() {
+				var a = parseInt(document.getElementById("t1").value);
+				var b = parseInt(document.getElementById("t3").value);
+				var v = document.getElementById("t2");
+				
+				if((isNaN(a)) || (isNaN(a)))
+					alert("Enter valid value(s)");
+				else
+					v.value = parseInt(a * b);
+			}
+			
+			function f3() {
+				var a = parseInt(document.getElementById("t1").value);
+				var b = parseInt(document.getElementById("t3").value);
+				var v = document.getElementById("t2");
+				
+				if((isNaN(a)) || (isNaN(a)))
+					alert("Enter valid value(s)");
+				else
+					v.value = parseInt(a / b);
+			}
+			
+			function f4() {
+				var a = parseInt(document.getElementById("t1").value);
+				var b = parseInt(document.getElementById("t3").value);
+				var v = document.getElementById("t2");
+				
+				if((isNaN(a)) || (isNaN(a)))
+					alert("Enter valid value(s)");
+				else
+					v.value = parseInt(Math.pow(a,b));
+			}
+			
+			function f5() {
+				var a = parseInt(document.getElementById("t1").value);
+				var b = parseInt(document.getElementById("t3").value);
+				var v = document.getElementById("t2");
+				
+				if((isNaN(a)) || (isNaN(a)))
+					alert("Enter valid value(s)");
+				else
+					v.value = parseInt(a % b);
+			}		
+		</script>
+	</head>
+	
+	<center><body>
+		<input type = "text" id = "t1"><br>
+		<input type = "text" id = "t3"><br>
+		<input type = "text" id = "t2" readonly><br>
+		<input type = "button" value = "+" onClick = "f()">
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "button" value = "-" onClick = "f1()"><br>
+		<input type = "button" value = "*" onClick = "f2()">
+		&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "button" value = "/" onClick = "f3()"><br>
+		<input type = "button" value = "^" onClick = "f4()">
+		&nbsp&nbsp&nbsp&nbsp&nbsp<input type = "button" value = "%" onClick = "f5()">
+	
+	</body></center>
+</html>
