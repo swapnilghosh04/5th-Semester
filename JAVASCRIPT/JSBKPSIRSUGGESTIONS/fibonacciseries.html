@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	
+	<body>
+		<script>
+			var n = parseInt(prompt("Enter the number of steps below"));
+			var a = 0, b = 1, temp = a + b;
+			
+			var str = "Fibonacci Series: " + a + " " + b + " ";
+			for(i = 3; i <= n; i++) {
+				str = str + temp + " ";
+				a = b;
+				b = temp;
+				temp = a + b;
+			}
+			document.write(str);
+		</script>
+	</body>
+</html>

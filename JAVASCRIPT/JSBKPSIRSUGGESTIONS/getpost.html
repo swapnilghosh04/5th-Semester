@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+		function f() {
+			var u = document.getElementsByName("t1")[0].value;
+			var p = document.getElementsByName("t2")[0].value;
+			const re1 = /^[a-z][a-zA-Z0-9.-_]{4,19}$/;
+			const re2 = /^[a-zA-Z0-9!@#$%^&*]{8,}$/;
+			
+			if(u == "" || p == "") {
+				alert("Textbox(es) can not be blank");
+				return false;
+			} else if(!re1.test(u) || !re2.test(p)) {
+				alert("Enter valid value(s)");
+				return false;
+			} else {
+				alert("Congratulations");
+				return true;
+			}
+		}
+		</script>
+				
+	</head>
+	
+	<body>
+		<form method = "POST" action = "getpostaction.html" onsubmit = "return f();">
+			Username <input type = "text" name = "t1"><br>
+			Password <input type = "text" name = "t2"><br><br>
+			<input type = "submit" value = "click">
+		</form>
+	</body>
+</html>

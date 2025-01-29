@@ -8,7 +8,7 @@
       var d = new Date();
       var n = "";
       n = n + "Today is : ";
-      k = d.getDay();
+      var k = d.getDay();
       if (k == 0)
         n = n + "Sunday";
       else if (k == 1)
